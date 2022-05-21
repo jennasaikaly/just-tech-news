@@ -2,7 +2,7 @@
 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
+const bcrypt = require('bcrypt');
 // create our User model
 //the model class is what we create our own models from using the 'extends' keyword
 //so User inherits all of the functionality of the Model class.
