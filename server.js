@@ -3,9 +3,6 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const path = require('path');
 const app = express();
-<<<<<<< HEAD
-const PORT = process.env.PORT || 3006;
-=======
 const PORT = process.env.PORT || 3001;
 const helpers = require('./utils/helpers');
 const exphbs = require('express-handlebars');
@@ -27,7 +24,6 @@ const sess = {
 app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
->>>>>>> develop
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
